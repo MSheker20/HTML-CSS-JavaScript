@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Positions</title>
+
+        <style>
+            .kutu {
+                width: 150px;
+                height: 150px;
+            }
+
+            #kutu1 {
+                background-color: lightpink;
+                width: 100%;
+                position: sticky;
+                top: 50px;
+                /* position: fixed;
+                bottom: 0px;
+                right: 0px; */
+            }
+            #kutu2 {
+                background-color: lightblue;
+                /* position: absolute;
+                top: 50px;
+                left: 50px; */
+            }
+            #kutu3 {
+                background-color: lightcoral;
+                /* position: relative;
+                top: 50px;
+                left: 50px; */
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            aperiam nemo numquam praesentium expedita? Veniam sed earum
+            incidunt! Aliquid, debitis id. Dolorum odit fuga neque
+            necessitatibus ipsum sequi error non?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            reprehenderit cumque voluptatibus commodi minus ducimus architecto.
+            Accusantium dolorum quasi dignissimos aperiam minus aliquam
+            eligendi, voluptate nostrum officia tempora accusamus sapiente.
+        </p>
+        <div class="kutu" id="kutu1">Kutu 1</div>
+        <div class="kutu" id="kutu2">Kutu 2</div>
+        <div class="kutu" id="kutu3">Kutu 3</div>
+
+        <div style="height: 3000px"></div>
+    </body>
+</html>
