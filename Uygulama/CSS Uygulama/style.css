@@ -35,6 +35,12 @@ ul {
     list-style-type: none;
 }
 
+section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
 .img-fluid {
     max-width: 256px;
     height: auto;
@@ -68,6 +74,7 @@ nav {
     padding-bottom: 2rem;
     position: fixed;
     width: 100%;
+    z-index: 500;
 }
 
 #logo-box {
@@ -115,10 +122,18 @@ header h1 {
     color: #fff;
     font-size: 6rem;
 }
+hr.star-light {
+    border-color: #fff;
+}
 
-.star-light {
+hr.star-dark {
+    border-color: #2d3d4f;
+}
+
+.star-light,
+.star-dark {
     border: none;
-    border-top: 0.4rem solid #fff;
+    border-top: 0.4rem solid;
     border-radius: 10px;
     max-width: 25rem;
     margin: 2.5rem auto;
@@ -126,15 +141,24 @@ header h1 {
     height: 0;
 }
 
-.star-light::after {
+.star-light::after,
+.star-dark::after {
     content: "\2605";
-    color: #fff;
     font-weight: 900;
     font-size: 3.2rem;
     position: relative;
     top: -28px;
     padding: 0 8px;
+}
+
+.star-light::after {
+    color: #fff;
     background-color: #1abc9b;
+}
+
+.star-dark::after {
+    color: #2d3d4f;
+    background-color: #fff;
 }
 
 header h2 {
@@ -142,4 +166,89 @@ header h2 {
     font-size: 2.4rem;
     font-family: "Lato", sans-serif;
     font-weight: 300;
+}
+
+/* Portfolio */
+
+#portfolio {
+}
+
+#portfolio h2 {
+    font-size: 4.8rem;
+    color: #2d3d4f;
+}
+
+.col {
+    float: left;
+    width: 33.333%;
+    padding: 10px;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.img-fluid-p {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-item img {
+    display: block;
+    border-radius: 13px;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1abc9b;
+    opacity: 0;
+    transition: opacity 0.4s;
+    border-radius: 13px;
+}
+
+.img-overlay .icon {
+    color: white;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio-item:hover .img-overlay {
+    opacity: 0.8;
+}
+
+#about {
+    background-color: #1abc9b;
+    color: #fff;
+}
+
+#about h2 {
+    font-size: 4.8rem;
+}
+
+#about-text {
+    text-align: left;
+}
+
+#about-text .left {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 23rem;
+}
+#about-text .right {
+    float: right;
+    width: 50%;
+    padding-right: 23rem;
+    padding-left: 2rem;
+}
+
+#about-text .text {
+    font-size: 2rem;
 }
