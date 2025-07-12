@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 7px;
 }
 
 body {
@@ -34,6 +34,12 @@ p {
 img {
     width: 100%;
     height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 header {
@@ -116,4 +122,27 @@ footer {
 
 footer a {
     color: yellowgreen;
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 11px;
+    }
+
+    #section-b li {
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box {
+        width: 50%;
+        float: left;
+    }
 }
