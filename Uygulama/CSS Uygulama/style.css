@@ -297,3 +297,24 @@ header h2 {
     margin: 0 auto;
     text-align: left;
 }
+
+.form-group {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 2.4rem;
+}
+
+.form-group input:focus {
+    outline: none;
+}
+.form-group textarea:focus {
+    outline: none;
+}
