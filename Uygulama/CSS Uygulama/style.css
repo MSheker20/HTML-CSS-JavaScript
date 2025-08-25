@@ -41,6 +41,41 @@ section {
     text-align: center;
 }
 
+.btn {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    color: #212529;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+
+.btn-outline {
+    color: #fff;
+    border-color: white;
+    background-color: transparent;
+    padding: 2.2rem 1.6rem;
+}
+
+.btn-primary {
+    background-color: #1abc9b;
+    border-color: #1abc9b;
+    padding: 1.2rem 1rem;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #128f76;
+    border-color: #128f76;
+}
+
 .img-fluid {
     max-width: 256px;
     height: auto;
@@ -170,9 +205,6 @@ header h2 {
 
 /* Portfolio */
 
-#portfolio {
-}
-
 #portfolio h2 {
     font-size: 4.8rem;
     color: #2d3d4f;
@@ -222,7 +254,7 @@ header h2 {
 .portfolio-item:hover .img-overlay {
     opacity: 0.8;
 }
-
+/* ABOUT */
 #about {
     background-color: #1abc9b;
     color: #fff;
@@ -251,4 +283,17 @@ header h2 {
 
 #about-text .text {
     font-size: 2rem;
+}
+
+/* Contact */
+
+#contact h2 {
+    font-size: 4.8rem;
+    color: #2c3e50;
+}
+
+#contact-form {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
 }
