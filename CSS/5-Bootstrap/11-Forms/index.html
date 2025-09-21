@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootstrap 5</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+
+        <style>
+            .w {
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body class="p-5">
+        <form>
+            <div class="form-group">
+                <label for="name">Adınız:</label>
+                <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    placeholder="Adınızı Giriniz"
+                />
+            </div>
+            <div class="form-group mt-3">
+                <label for="surname">Soyadınız:</label>
+                <input
+                    type="text"
+                    id="surname"
+                    class="form-control"
+                    placeholder="Soyadınızı Giriniz"
+                />
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="surname">E-Mail Adresiniz:</label>
+                <input
+                    type="email"
+                    id="mail"
+                    class="form-control"
+                    placeholder="E-Mail Adresinizi Giriniz"
+                />
+                <small class="form-text text-muted"
+                    >E-Mail adresi girmek zorunludur.</small
+                >
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="password">Parolanız:</label>
+                <input
+                    type="password"
+                    id="password"
+                    class="form-control"
+                    placeholder="Parolanızı Giriniz"
+                />
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="city">Doğum Yeriniz:</label>
+                <select name="city" id="city" class="form-control">
+                    <option value="34">İstanbul</option>
+                    <option value="20">Denizli</option>
+                    <option value="06">Ankara</option>
+                    <option value="35">İzmir</option>
+                    <option value="26">Eskişehir</option>
+                </select>
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="message">Mesajınız:</label>
+                <textarea
+                    name="message"
+                    id="message"
+                    cols="15"
+                    rows="5"
+                    class="form-control"
+                >
+                </textarea>
+            </div>
+
+            <div class="form-group mt-3">
+                <legend>Hobileriniz:</legend>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" />Futbol
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" />Basketbol
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" />Tenis
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" />Yüzme
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" />Atletizim
+                    </label>
+                </div>
+            </div>
+
+            <div class="custom-control custom-checkbox mt-3">
+                <input type="checkbox" id="cb" class="custom-control-input" />
+                <label class="custom-control-label" for="cb">CheckBox</label>
+            </div>
+
+            <div class="custom-control custom-radio mt-3">
+                <input type="radio" id="rb" class="custom-control-input" />
+                <label class="custom-control-label" for="rb">RadioButton</label>
+            </div>
+
+            <div class="input-group mt-3">
+                <input type="text" class="form-control" />
+                <div class="input-group-append">
+                    <span class="input-group-text" id="ig">@gmail.com</span>
+                </div>
+            </div>
+            <div class="input-group mt-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="ig"
+                        >https://www.instagram.com/</span
+                    >
+                </div>
+                <input type="text" class="form-control" />
+            </div>
+        </form>
+
+        <!-- Script-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
